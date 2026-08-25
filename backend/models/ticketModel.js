@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ticketSchema = mongoose.Schema(
   {
-    type: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: 'User',
@@ -18,7 +18,6 @@ const ticketSchema = mongoose.Schema(
     },
     status: {
       type: String,
-      required: true,
       enum: ['new', 'open', 'closed'],
       default: 'new',
     },
