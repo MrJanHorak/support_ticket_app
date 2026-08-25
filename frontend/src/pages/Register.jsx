@@ -19,7 +19,7 @@ function Register() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { user, isLoading, isSuccess, message, isError } = useSelector(
+  const { user, isSuccess, message, isError } = useSelector(
     (state) => state.auth,
   );
 
