@@ -91,6 +91,7 @@ export const ticketSlice = createSlice({
   name: 'ticket',
   initialState,
   reducers: {
+    // eslint-disable-next-line
     reset: (state) => initialState,
   },
   extraReducers: (builder) => {

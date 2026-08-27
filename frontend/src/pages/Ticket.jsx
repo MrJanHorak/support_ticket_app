@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getTicket, reset, closeTicket } from '../features/tickets/ticketSlice';
+import { getTicket, closeTicket } from '../features/tickets/ticketSlice';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import { useParams, useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 
 function Ticket() {
-  const { ticket, isLoading, isSuccess, isError, message } = useSelector(
+  const { ticket, isLoading, isError, message } = useSelector(
     (state) => state.tickets,
   );
 
