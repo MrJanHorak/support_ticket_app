@@ -53,7 +53,7 @@ function Login() {
   if (isLoading) {
     return <Spinner />;
   }
-  
+
   return (
     <>
       <section className='heading'>
@@ -73,6 +73,7 @@ function Login() {
               value={email}
               onChange={onChange}
               placeholder='Enter your email'
+              autoComplete='username'
               required
             />
           </div>
@@ -85,6 +86,7 @@ function Login() {
               value={password}
               onChange={onChange}
               placeholder='Enter password'
+              autoComplete='current-password'
               required
             />
           </div>

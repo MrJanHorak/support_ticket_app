@@ -92,6 +92,7 @@ function Register() {
               value={email}
               onChange={onChange}
               placeholder='Enter your email'
+              autoComplete='username'
               required
             />
           </div>
@@ -104,6 +105,7 @@ function Register() {
               value={password}
               onChange={onChange}
               placeholder='Enter password'
+              autoComplete='new-password'
               required
             />
           </div>
@@ -116,6 +118,7 @@ function Register() {
               value={password2}
               onChange={onChange}
               placeholder='confirm password'
+              autoComplete='new-password'
               required
             />
           </div>
